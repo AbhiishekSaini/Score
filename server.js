@@ -38,7 +38,7 @@ cron.schedule("*/30 * * * * *", async () => {
     try {
         console.log("Calling '/' route...");
         // await axios.get("http://localhost:" + PORT);
-        await axios.get("");
+        await axios.get("https://scoremate-4kms.onrender.com/");
     } catch (error) {
         console.error("Error calling '/' route:", error.message);
     }
